@@ -14,7 +14,10 @@ config :test_child_liveview_event,
 config :test_child_liveview_event, TestChildLiveviewEventWeb.Endpoint,
   url: [host: "localhost"],
   render_errors: [
-    formats: [html: TestChildLiveviewEventWeb.ErrorHTML, json: TestChildLiveviewEventWeb.ErrorJSON],
+    formats: [
+      html: TestChildLiveviewEventWeb.ErrorHTML,
+      json: TestChildLiveviewEventWeb.ErrorJSON
+    ],
     layout: false
   ],
   pubsub_server: TestChildLiveviewEvent.PubSub,
