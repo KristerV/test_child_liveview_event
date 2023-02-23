@@ -17,7 +17,7 @@ defmodule TestChildLiveviewEventWeb.Router do
   scope "/", TestChildLiveviewEventWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", ParentLive, :index
   end
 
   # Other scopes may use custom stacks.
